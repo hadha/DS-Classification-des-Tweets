@@ -8,6 +8,8 @@ _**3 DNI Groupe 1**_
 
 
 ## Description du projet
+Twitter est une mine d'or de données. Contrairement aux autres plates-formes sociales, presque tous les tweets des utilisateurs sont entièrement publics et extractibles. C'est un énorme avantage si vous essayez d'obtenir une grande quantité de données sur lesquelles exécuter des analyses. Les données Twitter sont également assez spécifiques. L'API de Twitter nous permet d'effectuer des requêtes complexes, comme extraire chaque tweet sur un certain sujet au cours des vingt dernières minutes, ou extraire les tweets non retweetés d'un certain utilisateur.<br/>
+Donc dans le projet nous allons extraire les tweets avec notre API pour analyser les mots avec la bibliothèque NLTK puis nous les regrouperons selon leur thème que nous avons choisi avec KMEANS
 
 ## Objectifs du projet
 - _Maitriser l’API de twitter pour l’extraction des tweets<br/>_
@@ -44,6 +46,49 @@ Nous avons ainsi listé une collection non-ordonnée d'éléments, connu comme "
 _La "tokénisation", telle qu'il s'agit du processus consistant à briser un flux de texte en plusieurs mots, phrases, symboles ou tout autre élements significatifs dénommés Signes (tokens)._<br/>
 la fonction ``word_tokenize()`` découpe de chaîne de signes selon la ponctuation, en dehors des points.
 
-_3 - _
+_ 3 - **La bibiliothéque Twython** est une bibliothèque Python offrant un moyen facile d'accéder aux données Twitter. _<br/>
+``pip install twypthon``<br/>
+<br/>
+
+_ 4 - **TextBlob** est une bibliothèque Python pour le traitement de données textuelles. Il fournit une API simple pour plonger dans les tâches courantes de traitement du langage naturel (PNL) telles que le marquage d'une partie du discours, l'extraction de phrases nominales, l'analyse des sentiments, la classification, la traduction, etc. _<br/>
+``pip install textblob``<br/>
+<br/>
+
+5 - **Le module re** fournit des modèles d'expressions régulières de style Perl. Les expressions régulières en Python nécessitent d'importer le module natif re.<br/>
+``pip install regex``<br/>
+<br/>
+
+## I - Prétraitement des données
+
+## II - NLTK
+#### Les étapes nécessaires comprennent
+Tokenizing sentences pour décomposer le texte en phrases, mots ou autres unités<br/>
+Removing stop words like “if,” “but,” “or,” and so on<br/>
+Normalizing words en condensant toutes les formes d'un mot en une seule forme<br/>
+Vectorizing text en transformant le texte en représentation numérique pour la consommation de nos classificateur
+
+ - 1/ **Tokenizing**
+<br/>
+La tokenisation est le processus de décomposition de morceaux de texte en plus petits morceaux. spaCy est livré avec un pipeline de traitement par défaut qui commence par la tokenisation, ce qui rend ce processus un jeu d'enfant. Dans spaCy, vous pouvez effectuer soit une tokenisation de phrase, soit une tokenisation de mot:<br/>
+**Word tokenization** décompose le texte en mots individuels.<br/>
+**Sentence tokenization** décompose le texte en phrases individuelles.<br/>
+- 2/ **Removing Stop Words**
+<br/>
+Stop Words sont des mots qui peuvent être importants dans la communication humaine mais qui ont peu de valeur pour les machines. spaCy est livré avec une liste par défaut de mots vides que vous pouvez personnaliser<br/>
+- 3/ **Normalizing Words**
+<br/>
+La normalisation est un peu plus complexe que la tokenisation. Cela implique de condenser toutes les formes d'un mot en une seule représentation de ce mot.
+<br/>
+- Stemming
+- Lemmatization
+<br/>
+**Stemming** : un mot est coupé à sa racine, la plus petite unité de ce mot à partir de laquelle vous pouvez créer les mots descendants. Vous venez de voir un exemple de cela ci-dessus avec "montre". La racine tronque simplement la chaîne en utilisant des terminaisons communes, de sorte qu'elle manquera la relation entre «sentir» et «ressenti», par exemple.
+<br/>
+**Lemmatization** : cherche à résoudre ce problème. Ce processus utilise une structure de données qui relie toutes les formes d'un mot à sa forme la plus simple, ou lemme. Parce que la lemmatisation est généralement plus puissante que la tige, c'est la seule stratégie de normalisation proposée par spaCy.
+<br/>
+- 4/ **Vectorizing Text**
+<br/>
+est un processus qui transforme un jeton en un vecteur, ou un tableau numérique qui, dans le contexte de la NLP, est unique et représente diverses caractéristiques d'un jeton. Les vecteurs sont utilisés sous le capot pour trouver des similitudes de mots, classer le texte et effectuer d'autres opérations NLP.
+
 
 
