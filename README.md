@@ -87,7 +87,9 @@ _ 4 - **TextBlob** est une bibliothèque Python pour le traitement de données t
 <br/>
 
 ## II - Accéder à l'API Twitter
-![alt text](http://url/to/img.png)
+<p align="center">
+  <img src="https://github.com/hadha/DS-Classification-des-Tweets/tree/main/Gif/img.png" width="350">
+ </p>
 
 
 <br/>
