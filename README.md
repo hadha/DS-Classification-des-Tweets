@@ -225,21 +225,3 @@ Il s‘agit du processus qui permet de déterminer la tonalité émotionnelle qu
 ## XI - Conclusion
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-![](Gif/1.gif)
-
