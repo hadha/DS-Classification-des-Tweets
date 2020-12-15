@@ -43,7 +43,9 @@ Donc dans le projet nous allons extraire les tweets avec notre API pour analyser
 ### X - Analyse des sources<br/>
 ### XI - Conclusion<br/>
 
-## Installation
+<hr>
+
+## Importation des bibliothéques
 _1 - <b>La bibliothéque tweepy</b>: Tweepy prend en charge l'accès à Twitter via l'authentification de base et la nouvelle méthode, OAuth. Twitter a cessé d'accepter l'authentification de base, donc OAuth est désormais le seul moyen d'utiliser l'API Twitter._<br/>
 Tweepy donne accès à l'API Twitter bien documentée. Avec tweepy, il est possible d'obtenir n'importe quel objet et d'utiliser n'importe quelle méthode proposée par l'API Twitter officielle.<br/>
 ``pip install tweepy``
@@ -82,6 +84,11 @@ _ 4 - **TextBlob** est une bibliothèque Python pour le traitement de données t
 
 5 - **Le module re** fournit des modèles d'expressions régulières de style Perl. Les expressions régulières en Python nécessitent d'importer le module natif re.<br/>
 ``pip install regex``<br/>
+<br/>
+
+## II - Accéder à l'API Twitter
+![](Gif/1.gif)
+
 <br/>
 
 ## I - Prétraitement des données
