@@ -80,7 +80,7 @@ Stop Words sont des mots qui peuvent être importants dans la communication huma
 <br/>
 La normalisation est un peu plus complexe que la tokenisation. Cela implique de condenser toutes les formes d'un mot en une seule représentation de ce mot.
 <br/>
- - Stemming
+ - Stemming<br/>
  - Lemmatization
 <br/>
 <b>Stemming</b> : un mot est coupé à sa racine, la plus petite unité de ce mot à partir de laquelle vous pouvez créer les mots descendants. Vous venez de voir un exemple de cela ci-dessus avec "montre". La racine tronque simplement la chaîne en utilisant des terminaisons communes, de sorte qu'elle manquera la relation entre «sentir» et «ressenti», par exemple.
@@ -91,5 +91,5 @@ La normalisation est un peu plus complexe que la tokenisation. Cela implique de 
 <br/>
 est un processus qui transforme un jeton en un vecteur, ou un tableau numérique qui, dans le contexte de la NLP, est unique et représente diverses caractéristiques d'un jeton. Les vecteurs sont utilisés sous le capot pour trouver des similitudes de mots, classer le texte et effectuer d'autres opérations NLP.
 
-
+![](1.gif)
 
