@@ -88,26 +88,97 @@ _ 4 - **TextBlob** est une bibliothèque Python pour le traitement de données t
 
 ## II - Accéder à l'API Twitter
 <p align="center">
-  <img src="https://github.com/hadha/DS-Classification-des-Tweets/tree/main/Gif/img.png" width="350">
+  <img src="https://github.com/hadha/DS-Classification-des-Tweets/blob/main/Gif/img.PNG" width="350">
  </p>
+ 
+ <hr>
 
+## III - Extraction des tweets
+Nous avons choisi 5 thèmes différents :<br/>
+1- Mcdonald<br/>
+2- Travel<br/>
+3- Google<br/>
+4- Huawei<br/>
+5- Bershka<br/>
+6- Cristiano Ronaldo<br/>
 
+Et pour chaque théme nous avons crée un fichier csv
+
+<hr>
+
+## IV - Fusionner les fichiers CSV
+Dans cette étape, nous avons regroupé tous les thèmes dans un seul fichier csv
+
+<hr>
+
+## V - Data Preparation
+Le terme « préparation des données » désigne les opérations de nettoyage et transformation qui doivent être appliqués aux données brutes avant leur traitement et analyse. Il s’agit d’une étape importante avant le traitement proprement dit, qui implique souvent de reformater et corriger les données et de combiner des datasets pour enrichir certaines données.
+La première étape de la data preparation consiste à pouvoir accéder aux données de n’importe quelle source, quel qu’en soit l’origine, le récit ou le format.
+<br/>
 <br/>
 
-## I - Prétraitement des données
 ### 1 - Chargement des données : Data Retrievel
-### 2 - Les informations statistiques sur les données
-### 3 - Les missings values
-### 4 - Les types des donneés : Numériques ou Catégoriques
-### 5 - Visualisation des histogrammes des variables numériques
-### 6 - La corrélation entre les variables
+Avec la commande ``pd.read_csv`` nous pouvons lire nos données.
 
-## II - NLTK
+<hr>
+
+### 2 - Les informations statistiques sur les données
+Avec la commande .describe() nous pouvons faire des statistiques sur nos données
+
+<hr>
+
+### 3 - Les missings values
+Pour voir les valeurs manquantes qu'on a.
+
+<hr>
+
+### 4 - Les types des donneés : Numériques ou Catégoriques
+Connaître les types de nos données.
+<br/>
+Les données numériques concernent des données représentées sous un format compatible avec un ordinateur. Un ordinateur ne peut traiter que des données numériques, puisqu'il fonctionne en mode binaire.
+<br/>
+Une variable catégorique est une variable où chaque réponse peut être classée dans une catégorie particulière.
+<br/>
+
+<hr>
+
+### 5 - Visualisation des histogrammes des variables numériques
+Le but de la visualisation de données étant de représenter graphiquement des données brutes
+
+<hr>
+
+### 6 - La corrélation entre les variables
+Une corrélation est une relation qu’il y a entre différentes variables<br/>
+
+<hr>
+
+## VI -Prétraitement des tweets : Cleaning Data
+### 1 - Supprimer les noms des utilisateurs
+Un nom précédé d'arobase « @ » est un lien vers le compte Twitter de l'utilisateur de ce nom (qui permet de voir tous ses tweets, sauf s'ils sont protégés)<br/>
+Le module de string de Python fournit des constantes pour les opérations liées aux chaînes.<br/>
+Le module re a été spécialement conçu pour travailler avec les expressions régulières (Regular Expressions). Il définit plusieurs fonctions utiles, que nous allons découvrir, ainsi que des objets propres pour modéliser des expressions.<br/>
+
+### 2 - Remplacer une expression
+Un mot précédé du signe « # » (croisillon) est un hashtag. Il s'agit d'un sujet attribué au message, Twitter peut afficher tous les tweets comportant un hashtag précis, et établit un classement des mots ou bien des hashtags du moment les plus utilisés.<br/>
+D'abord, on trouve un caractère accent circonflexe ^ qui veut dire qu'on cherche l'expression au début de la chaîne. Vous pouvez aussi voir, à la fin de la regex, le symbole $ qui veut dire que l'expression doit être à la fin de la chaîne. Si l'expression doit être au début et à la fin de la chaîne, cela signifie que la chaîne dans laquelle on recherche ne doit rien contenir d'autre que l'expression.<br/>
+Nous avons ensuite une classe de caractère [0-9]. Cela signifie qu'après le 0, on doit trouver un chiffre compris entre 0 et 9 (peut-être 0, peut-être 1, peut-être 2…).
+<br/>
+Pour remplacer une partie d'une chaîne de caractères sur la base d'une regex, nous allons utiliser la fonction sub du module re.<br/>
+Elle prend trois paramètres :<br/>
+l'expression à rechercher ;<br/>
+par quoi remplacer cette expression ;<br/>
+la chaîne d'origine.
+<br/>
+
+<hr>
+
+## VII - NLTK
+
 #### Les étapes nécessaires comprennent
-Tokenizing sentences pour décomposer le texte en phrases, mots ou autres unités<br/>
-Removing stop words like “if,” “but,” “or,” and so on<br/>
-Normalizing words en condensant toutes les formes d'un mot en une seule forme<br/>
-Vectorizing text en transformant le texte en représentation numérique pour la consommation de nos classificateur
+1 - Tokenizing sentences pour décomposer le texte en phrases, mots ou autres unités<br/>
+2 - Removing stop words like “if,” “but,” “or,” and so on<br/>
+3 - Normalizing words en condensant toutes les formes d'un mot en une seule forme<br/>
+4 - Vectorizing text en transformant le texte en représentation numérique pour la consommation de nos classificateur
 
  ### 1 - Tokenizing
 <br/>La tokenisation est le processus de décomposition de morceaux de texte en plus petits morceaux. spaCy est livré avec un pipeline de traitement par défaut qui commence par la tokenisation, ce qui rend ce processus un jeu d'enfant. Dans spaCy, vous pouvez effectuer soit une tokenisation de phrase, soit une tokenisation de mot:<br/>
@@ -133,11 +204,25 @@ La normalisation est un peu plus complexe que la tokenisation. Cela implique de 
 <br/>
 est un processus qui transforme un jeton en un vecteur, ou un tableau numérique qui, dans le contexte de la NLP, est unique et représente diverses caractéristiques d'un jeton. Les vecteurs sont utilisés sous le capot pour trouver des similitudes de mots, classer le texte et effectuer d'autres opérations NLP.
 
+<hr>
 
+## VIII - Clustering : KMeans
+C’est l’un des algorithmes de clustering les plus répandus. Il permet d’analyser un jeu de données caractérisées par un ensemble de descripteurs, afin de regrouper les données “similaires” en groupes (ou clusters).
 
+<hr>
 
+## IX - Analyse des Sentiments
+L’analyse du sentiment (ou de la tonalité), aussi appelé opinion mining, est une notion beaucoup évoquée mais souvent mal comprise.
+<br/>
+Il s‘agit du processus qui permet de déterminer la tonalité émotionnelle qui se cache derrière une série de mots. Cette analyse est utilisée pour mieux comprendre la perception, les opinions et les émotions exprimées dans une mention en ligne.
 
+<hr>
 
+## X - Analyse des sources
+
+<hr>
+
+## XI - Conclusion
 
 
 
