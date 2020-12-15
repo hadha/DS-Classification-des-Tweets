@@ -47,7 +47,7 @@ Donc dans le projet nous allons extraire les tweets avec notre API pour analyser
 
 <hr>
 
-## Importation des bibliothéques
+## I - Importation des bibliothéques
 _1 - <b>La bibliothéque tweepy</b>: Tweepy prend en charge l'accès à Twitter via l'authentification de base et la nouvelle méthode, OAuth. Twitter a cessé d'accepter l'authentification de base, donc OAuth est désormais le seul moyen d'utiliser l'API Twitter._<br/>
 Tweepy donne accès à l'API Twitter bien documentée. Avec tweepy, il est possible d'obtenir n'importe quel objet et d'utiliser n'importe quelle méthode proposée par l'API Twitter officielle.<br/>
 ``pip install tweepy``
