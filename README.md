@@ -231,3 +231,18 @@ Il s‘agit du processus qui permet de déterminer la tonalité émotionnelle qu
 
 ## XI - Conclusion
 Dans ce projet, nous avons vu l'extraction de tweets et les analyser avec la bibliothèque nltk pour regrouper les thèmes que nous avons choisis.
+
+## Références
+[Watermark](https://github.com/rasbt/watermark)
+<br/>
+[NLTK](https://code.tutsplus.com/fr/tutorials/introducing-the-natural-language-toolkit-nltk--cms-28620)
+<br/>
+[Analyse des sentiments](https://stackabuse.com/python-for-nlp-sentiment-analysis-with-scikit-learn/)
+<br/>
+[Cleaning Data](https://www.youtube.com/watch?v=KhXU7KOxQcg&ab_channel=UnfoldDataScience)
+<br/>
+
+
+
+
+
