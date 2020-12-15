@@ -3,6 +3,10 @@
 _**Hadhémi Gharbi**_<br/>
 _**3 DNI Groupe 1**_
 
+[![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-markdown.svg)](https://forthebadge.com)
+
+
 ## Description du projet
 
 ## Objectifs du projet
