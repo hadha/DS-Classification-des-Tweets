@@ -35,9 +35,9 @@ Donc dans le projet nous allons extraire les tweets avec notre API pour analyser
 ### VII - NLTK<br/>
 #### 1 - Tokenization<br/>
 #### 2 - Stopwords & emotions<br/>
-#### 3 - Punctiations<br/>
-#### 4 - Normalizing Words<br/>
-#### 5 - Vectorization<br/>
+#### 2 - Stopwords & emotions & Punctiations<br/>
+#### 3 - Normalizing Words<br/>
+#### 4 - Vectorization<br/>
 ### VIII - Clustering : KMeans<br/>
 ### IX - Analyse des Sentiments<br/>
 ### X - Analyse des sources<br/>
@@ -95,11 +95,11 @@ _ 4 - **TextBlob** est une bibliothèque Python pour le traitement de données t
 
 ## III - Extraction des tweets
 Nous avons choisi 5 thèmes différents :<br/>
-1- Mcdonald<br/>
+1- Marketing<br/>
 2- Travel<br/>
 3- Google<br/>
 4- Huawei<br/>
-5- Bershka<br/>
+5- Care<br/>
 6- Cristiano Ronaldo<br/>
 
 Et pour chaque théme nous avons crée un fichier csv
