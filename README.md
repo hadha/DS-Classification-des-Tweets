@@ -104,7 +104,7 @@ Nous avons choisi 5 thèmes différents :<br/>
 
 Et pour chaque théme nous avons crée un fichier csv
 <br/>
-![](extraction.gif)
+![](GIF/extraction.gif)
 <hr>
 
 ## IV - Fusionner les fichiers CSV
