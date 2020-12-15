@@ -1,4 +1,4 @@
-<font style="font-family:cursive; font-size:25px; color:purple;">Classification des Tweets</font>
+# Classification des Tweets
 
 _Hadhémi Gharbi_
 
