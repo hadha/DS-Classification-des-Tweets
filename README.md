@@ -228,4 +228,4 @@ Il s‘agit du processus qui permet de déterminer la tonalité émotionnelle qu
 <hr>
 
 ## XI - Conclusion
-
+Dans ce projet, nous avons vu l'extraction de tweets et les analyser avec la bibliothèque nltk pour regrouper les thèmes que nous avons choisis.
