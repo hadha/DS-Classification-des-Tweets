@@ -103,12 +103,14 @@ Nous avons choisi 5 thèmes différents :<br/>
 6- Cristiano Ronaldo<br/>
 
 Et pour chaque théme nous avons crée un fichier csv
-
+<br/>
+![](extraction.gif)
 <hr>
 
 ## IV - Fusionner les fichiers CSV
 Dans cette étape, nous avons regroupé tous les thèmes dans un seul fichier csv
-
+<br/>
+![](fusionner.gif)
 <hr>
 
 ## V - Data Preparation
@@ -149,7 +151,8 @@ Le but de la visualisation de données étant de représenter graphiquement des 
 
 ### 6 - La corrélation entre les variables
 Une corrélation est une relation qu’il y a entre différentes variables<br/>
-
+<br/>
+![](corr.gif)
 <hr>
 
 ## VI -Prétraitement des tweets : Cleaning Data
@@ -157,6 +160,7 @@ Une corrélation est une relation qu’il y a entre différentes variables<br/>
 Un nom précédé d'arobase « @ » est un lien vers le compte Twitter de l'utilisateur de ce nom (qui permet de voir tous ses tweets, sauf s'ils sont protégés)<br/>
 Le module de string de Python fournit des constantes pour les opérations liées aux chaînes.<br/>
 Le module re a été spécialement conçu pour travailler avec les expressions régulières (Regular Expressions). Il définit plusieurs fonctions utiles, que nous allons découvrir, ainsi que des objets propres pour modéliser des expressions.<br/>
+![](user.gif)
 
 ### 2 - Remplacer une expression
 Un mot précédé du signe « # » (croisillon) est un hashtag. Il s'agit d'un sujet attribué au message, Twitter peut afficher tous les tweets comportant un hashtag précis, et établit un classement des mots ou bien des hashtags du moment les plus utilisés.<br/>
@@ -184,6 +188,7 @@ la chaîne d'origine.
 <br/>La tokenisation est le processus de décomposition de morceaux de texte en plus petits morceaux. spaCy est livré avec un pipeline de traitement par défaut qui commence par la tokenisation, ce qui rend ce processus un jeu d'enfant. Dans spaCy, vous pouvez effectuer soit une tokenisation de phrase, soit une tokenisation de mot:<br/>
 Word tokenization décompose le texte en mots individuels.<br/>
 Sentence tokenization décompose le texte en phrases individuelles.<br/>
+![](tokenize.gif)
 
 ### 2 - Removing Stop Words
 <br/>
@@ -208,18 +213,18 @@ est un processus qui transforme un jeton en un vecteur, ou un tableau numérique
 
 ## VIII - Clustering : KMeans
 C’est l’un des algorithmes de clustering les plus répandus. Il permet d’analyser un jeu de données caractérisées par un ensemble de descripteurs, afin de regrouper les données “similaires” en groupes (ou clusters).
-
+![](kmeans.gif)
 <hr>
 
 ## IX - Analyse des Sentiments
 L’analyse du sentiment (ou de la tonalité), aussi appelé opinion mining, est une notion beaucoup évoquée mais souvent mal comprise.
 <br/>
 Il s‘agit du processus qui permet de déterminer la tonalité émotionnelle qui se cache derrière une série de mots. Cette analyse est utilisée pour mieux comprendre la perception, les opinions et les émotions exprimées dans une mention en ligne.
-
+![](sentiments.gif)
 <hr>
 
 ## X - Analyse des sources
-
+![](source.gif)
 <hr>
 
 ## XI - Conclusion
