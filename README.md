@@ -67,29 +67,27 @@ Removing stop words like “if,” “but,” “or,” and so on<br/>
 Normalizing words en condensant toutes les formes d'un mot en une seule forme<br/>
 Vectorizing text en transformant le texte en représentation numérique pour la consommation de nos classificateur
 
- - <b>Tokenizing</b>
-<br/>
-La tokenisation est le processus de décomposition de morceaux de texte en plus petits morceaux. spaCy est livré avec un pipeline de traitement par défaut qui commence par la tokenisation, ce qui rend ce processus un jeu d'enfant. Dans spaCy, vous pouvez effectuer soit une tokenisation de phrase, soit une tokenisation de mot:<br/>
+ ### 1 - Tokenizing
+<br/>La tokenisation est le processus de décomposition de morceaux de texte en plus petits morceaux. spaCy est livré avec un pipeline de traitement par défaut qui commence par la tokenisation, ce qui rend ce processus un jeu d'enfant. Dans spaCy, vous pouvez effectuer soit une tokenisation de phrase, soit une tokenisation de mot:<br/>
 Word tokenization décompose le texte en mots individuels.<br/>
 Sentence tokenization décompose le texte en phrases individuelles.<br/>
-<br/>
-- <b>Removing Stop Words</b>
+
+### 2 - Removing Stop Words
 <br/>
 Stop Words sont des mots qui peuvent être importants dans la communication humaine mais qui ont peu de valeur pour les machines. spaCy est livré avec une liste par défaut de mots vides que vous pouvez personnaliser<br/>
-<br/>
-- <b>Normalizing Words</b>
+
+### 3 - Normalizing Words
 <br/>
 La normalisation est un peu plus complexe que la tokenisation. Cela implique de condenser toutes les formes d'un mot en une seule représentation de ce mot.
 <br/>
-- Stemming
-- Lemmatization
+ - Stemming
+ - Lemmatization
 <br/>
 <b>Stemming</b> : un mot est coupé à sa racine, la plus petite unité de ce mot à partir de laquelle vous pouvez créer les mots descendants. Vous venez de voir un exemple de cela ci-dessus avec "montre". La racine tronque simplement la chaîne en utilisant des terminaisons communes, de sorte qu'elle manquera la relation entre «sentir» et «ressenti», par exemple.
 <br/>
 <b>Lemmatization</b> : cherche à résoudre ce problème. Ce processus utilise une structure de données qui relie toutes les formes d'un mot à sa forme la plus simple, ou lemme. Parce que la lemmatisation est généralement plus puissante que la tige, c'est la seule stratégie de normalisation proposée par spaCy.
-<br/>
-<br/>
-- <b>Vectorizing Text</b>
+
+### 4 - Vectorizing Text
 <br/>
 est un processus qui transforme un jeton en un vecteur, ou un tableau numérique qui, dans le contexte de la NLP, est unique et représente diverses caractéristiques d'un jeton. Les vecteurs sont utilisés sous le capot pour trouver des similitudes de mots, classer le texte et effectuer d'autres opérations NLP.
 
