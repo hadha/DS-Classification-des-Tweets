@@ -17,6 +17,32 @@ Donc dans le projet nous allons extraire les tweets avec notre API pour analyser
 - _Appliquer les principes de nettoyage des données<br/>_
 - _Classer les tweets : regrouper ensemble les tweets qui sont similaires. C’est une étape qui peut être considérée comme une étape._
 
+## Plan du projet
+### I - Importation des bibliothéques<br/>
+### II - Accéder à l'API Twitter<br/>
+### III - Extraction des tweets<br/>
+### IV - Fusionner les fichiers CSV<br/>
+### V - Data Preparation<br/>
+#### 1 - Chargement des données : Data Retrievel<br/>
+#### 2 - Les informations statistiques sur les données<br/>
+#### 3 - Les missings values<br/>
+#### 4 - Les types des donneés : Numériques ou Catégoriques<br/>
+#### 5 - Visualisation des histogrammes des variables numériques<br/>
+#### 6 - La corrélation entre les variables<br/>
+### VI -Prétraitement des tweets : Cleaning Data<br/>
+#### 1 - Supprimer les noms des utilisateurs<br/>
+#### 2 - Remplacer une expression<br/>
+### VII - NLTK<br/>
+#### 1 - Tokenization<br/>
+#### 2 - Stopwords & emotions<br/>
+#### 3 - Punctiations<br/>
+#### 4 - Normalizing Words<br/>
+#### 5 - Vectorization<br/>
+### VIII - Clustering : KMeans<br/>
+### IX - Analyse des Sentiments<br/>
+### X - Analyse des sources<br/>
+### XI - Conclusion<br/>
+
 ## Installation
 _1 - <b>La bibliothéque tweepy</b>: Tweepy prend en charge l'accès à Twitter via l'authentification de base et la nouvelle méthode, OAuth. Twitter a cessé d'accepter l'authentification de base, donc OAuth est désormais le seul moyen d'utiliser l'API Twitter._<br/>
 Tweepy donne accès à l'API Twitter bien documentée. Avec tweepy, il est possible d'obtenir n'importe quel objet et d'utiliser n'importe quelle méthode proposée par l'API Twitter officielle.<br/>
@@ -59,6 +85,12 @@ _ 4 - **TextBlob** est une bibliothèque Python pour le traitement de données t
 <br/>
 
 ## I - Prétraitement des données
+### 1 - Chargement des données : Data Retrievel
+### 2 - Les informations statistiques sur les données
+### 3 - Les missings values
+### 4 - Les types des donneés : Numériques ou Catégoriques
+### 5 - Visualisation des histogrammes des variables numériques
+### 6 - La corrélation entre les variables
 
 ## II - NLTK
 #### Les étapes nécessaires comprennent
@@ -91,5 +123,28 @@ La normalisation est un peu plus complexe que la tokenisation. Cela implique de 
 <br/>
 est un processus qui transforme un jeton en un vecteur, ou un tableau numérique qui, dans le contexte de la NLP, est unique et représente diverses caractéristiques d'un jeton. Les vecteurs sont utilisés sous le capot pour trouver des similitudes de mots, classer le texte et effectuer d'autres opérations NLP.
 
-![](1.gif)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+![](Gif/1.gif)
 
