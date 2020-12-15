@@ -110,7 +110,7 @@ Et pour chaque théme nous avons crée un fichier csv
 ## IV - Fusionner les fichiers CSV
 Dans cette étape, nous avons regroupé tous les thèmes dans un seul fichier csv
 <br/>
-![](fusionner.gif)
+![](Gif/fusionner.gif)
 <hr>
 
 ## V - Data Preparation
@@ -230,3 +230,5 @@ Il s‘agit du processus qui permet de déterminer la tonalité émotionnelle qu
 ## XI - Conclusion
 
 
+
+![](corr.gif)
