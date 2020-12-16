@@ -1,4 +1,3 @@
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/hadha/DS-Classification-des-Tweets/main)
 
 # Classification des Tweets
 
