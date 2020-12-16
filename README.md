@@ -36,7 +36,6 @@ Donc dans le projet nous allons extraire les tweets avec notre API pour analyser
 #### 2 - Remplacer une expression<br/>
 ### VII - NLTK<br/>
 #### 1 - Tokenization<br/>
-#### 2 - Stopwords & emotions<br/>
 #### 2 - Stopwords & emotions & Punctiations<br/>
 #### 3 - Normalizing Words<br/>
 #### 4 - Vectorization<br/>
