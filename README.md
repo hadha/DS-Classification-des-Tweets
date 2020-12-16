@@ -101,7 +101,7 @@ Nous avons choisi 5 thèmes différents :<br/>
 2- Travel<br/>
 3- Google<br/>
 4- Huawei<br/>
-5- Car<br/>
+5- Cars<br/>
 6- Cristiano Ronaldo<br/>
 
 Et pour chaque théme nous avons crée un fichier csv
