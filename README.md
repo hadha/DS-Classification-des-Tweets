@@ -52,6 +52,7 @@ _1 - <b>La bibliothéque tweepy</b>: Tweepy prend en charge l'accès à Twitter 
 Tweepy donne accès à l'API Twitter bien documentée. Avec tweepy, il est possible d'obtenir n'importe quel objet et d'utiliser n'importe quelle méthode proposée par l'API Twitter officielle.<br/>
 ``pip install tweepy``
 <br/>
+<br/>
 _2 - <b>La bibliothéque nltk</b>: Natural Language Toolkit (NLTK) est une boîte-à-outil permettant la création de programmes pour l'analyse de texte._<br/>
 ``pip install nltk``<br/><br/>
 _La première chose à faire pour utiliser NLTK est de télécharger ce qui se nomme le NLTK corpora._<br/>
