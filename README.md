@@ -127,7 +127,7 @@ Avec la commande ``pd.read_csv`` nous pouvons lire nos données.
 <hr>
 
 ### 2 - Les informations statistiques sur les données
-Avec la commande .describe() nous pouvons faire des statistiques sur nos données
+Avec la commande ``.describe()`` nous pouvons faire des statistiques sur nos données
 
 <hr>
 
