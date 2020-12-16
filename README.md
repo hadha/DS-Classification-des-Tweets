@@ -17,7 +17,7 @@ Donc dans le projet nous allons extraire les tweets avec notre API pour analyser
 - _Maitriser l’API de twitter pour l’extraction des tweets<br/>_
 - _Maitriser la partie NLP (natural language processing) avec NLTK en Python<br/>_
 - _Appliquer les principes de nettoyage des données<br/>_
-- _Classer les tweets : regrouper ensemble les tweets qui sont similaires. C’est une étape qui peut être considérée comme une étape._
+- _Classer les tweets : regrouper ensemble les tweets qui sont similaires._
 
 ## Plan du projet
 ### I - Importation des bibliothéques<br/>
