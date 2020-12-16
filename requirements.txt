@@ -2,7 +2,7 @@ regex == 2020.6.8
 nltk == 3.5
 tweepy == 3.9.0
 pandas == 1.0.5
-cv2 == 4.4.0
+open-cv == 4.4.0
 numpy == 1.18.5
 sys == 3.8.3
 seaborn == 0.10.1
@@ -18,3 +18,4 @@ twython == 3.8.2
 normalise == 0.1.8
 oauthlib == 3.1.0
 olefile == 0.46
+watermark == 2.0.2
