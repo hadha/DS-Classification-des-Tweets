@@ -187,7 +187,7 @@ la chaîne d'origine.
 4 - Vectorizing text en transformant le texte en représentation numérique pour la consommation de nos classificateur
 
  ### 1 - Tokenizing
-<br/>La tokenisation est le processus de décomposition de morceaux de texte en plus petits morceaux. spaCy est livré avec un pipeline de traitement par défaut qui commence par la tokenisation, ce qui rend ce processus un jeu d'enfant. Dans spaCy, vous pouvez effectuer soit une tokenisation de phrase, soit une tokenisation de mot:<br/>
+<br/>La tokenisation est le processus de décomposition de morceaux de texte en plus petits morceaux. spaCy est livré avec un pipeline de traitement par défaut qui commence par la tokenisation, ce qui rend ce processus un jeu d'enfant. Dans spaCy, nous pouvons effectuer soit une tokenisation de phrase, soit une tokenisation de mot:<br/>
 Word tokenization décompose le texte en mots individuels.<br/>
 Sentence tokenization décompose le texte en phrases individuelles.<br/>
 ![](Gif/tokenize.gif)
