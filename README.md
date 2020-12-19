@@ -203,9 +203,9 @@ La normalisation est un peu plus complexe que la tokenisation. Cela implique de 
  - Stemming<br/>
  - Lemmatization
 <br/>
-<b>Stemming</b> : un mot est coupé à sa racine, la plus petite unité de ce mot à partir de laquelle vous pouvez créer les mots descendants. Vous venez de voir un exemple de cela ci-dessus avec "montre". La racine tronque simplement la chaîne en utilisant des terminaisons communes, de sorte qu'elle manquera la relation entre «sentir» et «ressenti», par exemple.
+<b>Stemming</b> : un mot est coupé à sa racine, la plus petite unité de ce mot à partir de laquelle vous pouvez créer les mots descendants.
 <br/>
-<b>Lemmatization</b> : cherche à résoudre ce problème. Ce processus utilise une structure de données qui relie toutes les formes d'un mot à sa forme la plus simple, ou lemme. Parce que la lemmatisation est généralement plus puissante que la tige, c'est la seule stratégie de normalisation proposée par spaCy.
+<b>Lemmatization</b> : Ce processus utilise une structure de données qui relie toutes les formes d'un mot à sa forme la plus simple, ou lemme. Parce que la lemmatisation est généralement plus puissante que la tige, c'est la seule stratégie de normalisation proposée par spaCy.
 
 ### 4 - Vectorizing Text
 <br/>
